@@ -29,10 +29,10 @@ const drawingSchema = new mongoose.Schema(
   {
     room: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Room",
-      required: true,
+      ref: "Room", required: true
     },
     strokes: [strokeSchema],
+    undoneStrokes: [strokeSchema],
   },
   { timestamps: true }
 );
