@@ -5,7 +5,7 @@ import {registerUser,userLogin,userLogout,tokenRefresher,getCurrentUser,changePa
 
 const router = Router()
 
-router.route("/loging").post(userLogin)
+router.route("/login").post(userLogin)
 router.route("/logout").post(jwtVerify,userLogout)
 router.route("/register").post(registerUser)
 router.route("/refreshTokens").post(tokenRefresher)
